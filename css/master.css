@@ -228,6 +228,16 @@ header .links ul li:not(:last-child) {
     transform: translate(-50%, -50%);
 }
 
+@media (max-width:768px) {
+    .services-1 p {
+        width: 400px;
+    }
+
+    .services-1 h1 {
+        font-size: 80px;
+    }
+}
+
 .services .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
