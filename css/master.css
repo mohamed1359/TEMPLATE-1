@@ -228,15 +228,6 @@ header .links ul li:not(:last-child) {
     transform: translate(-50%, -50%);
 }
 
-@media (max-width:768px) {
-    .services-1 p {
-        width: 400px;
-    }
-
-    .services-1 h1 {
-        font-size: 80px;
-    }
-}
 
 .services .container {
     display: grid;
@@ -259,7 +250,7 @@ p {
 }
 
 .services .container .services-2 h3:hover {
-    transform: scale(1.1) translateX(20px);
+    transform: scale(1.1);
     color: var(--maincolor);
 }
 
@@ -272,6 +263,25 @@ p {
     color: var(--maincolor);
     font-size: 30px;
     transform: translatey(50px);
+}
+
+@media (max-width:768px) {
+    .services {
+        text-align: center;
+    }
+
+    .services-1 h1 {
+        font-size: 80px;
+    }
+
+    .services .container .services-2 h3,
+    p {
+        padding-left: 0;
+    }
+
+    .services .container .services-2 i {
+        transform: none;
+    }
 }
 
 .services .container .services-3 {
